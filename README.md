@@ -10,6 +10,11 @@ Tested on Ubuntu 20.04 and 22.04 with Python 3.6.
 
 For use on Windows be sure to set `num_workers = 0` in `config.py`.
 
+# Install Pytorch
+```sh
+conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
+```
+
 ```sh
 # clone repo
 $ git clone https://github.com/msknorr/goat-public
@@ -22,7 +27,7 @@ $ pip install -r requirements.txt
 
 ## Inference
 
-1. Download [weights](https://github.com/msknorr/goat-public) and specify the path in `config.py`
+1. Download [weights](https://drive.google.com/file/d/1WvuRfUu613QLxJR2IOsH4wwWxuQ7TJ8p/view?usp=sharing) and specify the path in `config.py`
    ```sh
    model_weights = "[...]/mrcnn-weights.bin"
    ```
@@ -78,7 +83,7 @@ A dataframe in the following format is required.
 Testing requires a dataframe in the above format.
 ###  Testing on sample data
 
-1. Download [weights](https://github.com/msknorr/goat-public) and specify the path in `config.py`
+1. Download [weights](https://drive.google.com/file/d/1WvuRfUu613QLxJR2IOsH4wwWxuQ7TJ8p/view?usp=sharing) and specify the path in `config.py`
    ```sh
    model_weights = "[...]/mrcnn-weights.bin"
    ```
