@@ -1,0 +1,5 @@
+pip install opencv-python
+pip install albumentations
+pip install timm
+pip install seaborn
+pip install matplotlib==3.1.0
