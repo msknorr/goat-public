@@ -51,7 +51,7 @@ For training on this data:
 
 ###
 ###  Training on official data 
-:soon: *this option is available soon*
+:soon: *this option will be available soon*
 
 To run training on this dataset, follow these steps:
 1. [Download](https://zenodo.org/) the resources folder
@@ -103,7 +103,7 @@ Testing requires a dataframe in the above format.
 - [Matterport Mask-RCNN](https://github.com/matterport/Mask_RCNN) -> `mrcnn_utils.py`
 
 ## Data Availability
-:soon: *this option is available soon*
+:soon: *this option will be available soon*
 
 ``/goat_resources/`` folder structure:
 
