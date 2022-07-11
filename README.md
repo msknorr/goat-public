@@ -1,6 +1,6 @@
 # GOAT: General Organoid Annotation Tool
 ![Test Image 1](goat/plot.png)
-Official implementation of [GOAT](https://github.com/msknorr/goat-public), a neural network-driven tool for organoid annotation.
+<br /><br />Official implementation of [GOAT](https://github.com/msknorr/goat-public), a neural network-driven tool for organoid annotation.
 
 GOAT showed high performance and generalization for multiple organoid systems generated
 from different tissues, imaging tools and laboratories.
