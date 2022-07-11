@@ -5,16 +5,18 @@ GOAT showed high performance and generalization for multiple organoid systems ge
 from different tissues, imaging tools and laboratories.
 
 
-## Installation
-Tested on Ubuntu 20.04 and 22.04 with Python 3.6. 
+## Requirements
 
+The algorithm was developed and tested on Ubuntu 20.04 and 22.04 with Python 3.6.
 For use on Windows be sure to set `num_workers = 0` in `config.py`.
 
-# Install Pytorch
+A standard computer with enough RAM is required for inference. For training, a GPU with > 10 GB VRAM is recommended. The algorithm was developed on a RTX 3080. In order to run training on smaller GPUs, it is possible to automatically exclude images with more than X objects by adjusting `restrict_nr` in `config.py`.  
+
+## Installation
 ```sh
+# install pytorch
 conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
 ```
-
 ```sh
 # clone repo
 $ git clone https://github.com/msknorr/goat-public
@@ -31,10 +33,11 @@ $ pip install -r requirements.txt
    ```sh
    model_weights = "[...]/mrcnn-weights.bin"
    ```
-2. Run inference
+2. Run inference. 
    ```sh
    $ python inference.py "./data/" "./output/"
    ```
+   Inference on 8 sample images should take 10s on GPU and slightly longer on CPU. 
 ## Train
 ###  Training on sample data
 This is the fastest way to test the training pipeline.
@@ -59,7 +62,7 @@ To run training on this dataset, follow these steps:
    ```sh
    $ python train.py "./data_paper/imagedata.csv"
    ``` 
-
+Training took approximately 6 hours on a RTX3080 GPU.
 ###
 ###  Training on your own data
 A dataframe in the following format is required.
@@ -91,7 +94,7 @@ Testing requires a dataframe in the above format.
    ```sh
    $ python test.py "./data/imagedata.csv" "./output/"
    ``` 
-   
+   Testing of 8 sample images should take ~60s.
 
    
 ## Credits
