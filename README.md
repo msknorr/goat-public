@@ -1,6 +1,6 @@
 # GOAT: General Organoid Annotation Tool
 ![Test Image 1](goat/plot.png)
-<br /><br />Official implementation of [GOAT](https://github.com/msknorr/goat-public), a neural network-driven tool for organoid annotation.
+<br /><br />Official implementation of [GOAT](https://www.biorxiv.org/content/10.1101/2022.09.06.506648v1.full), a neural network-driven tool for organoid annotation.
 
 GOAT showed high performance and generalization for multiple organoid systems generated
 from different tissues, imaging tools and laboratories.
@@ -28,10 +28,9 @@ $ git clone https://github.com/msknorr/goat-public
 $ cd goat-public
 $ pip install -r requirements.txt
 ```
-
 ## Inference
 
-1. Download [weights](https://drive.google.com/file/d/1WvuRfUu613QLxJR2IOsH4wwWxuQ7TJ8p/view?usp=sharing) and specify the path in `config.py`
+1. Download [weights](https://drive.google.com/file/d/1AcrYCBR5-kg91C61boj221t1X_SVX8Hv/view?usp=sharing) and specify the path in `config.py`
    ```sh
    model_weights = "[...]/mrcnn-weights.bin"
    ```
